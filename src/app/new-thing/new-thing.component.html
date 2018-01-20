@@ -1,3 +1,5 @@
 <p>
-  new-thing works!
+  {{text}}
 </p>
+<input type="text" name="" value="{{text}}" #myInput>
+<button type="button" name="button" (click)="update.emit(myInput.value)"></button>
