@@ -7,6 +7,12 @@ import { MESSAGES } from "./mock-messages";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "app";
   messages = MESSAGES;
+
+  updateModel(newMsg, event) {
+    console.log("newMsg", newMsg, "event", event);
+    // this.messages = this.messages.map(
+    //   (m, i) => (m.id === i ? (m.text = newMsg) : m)
+    // );
+  }
 }

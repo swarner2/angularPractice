@@ -1,7 +1,8 @@
 
 <ul>
   <li *ngFor="let message of messages">
-    <app-new-thing [message]='message.text'></app-new-thing>
+    {{message.id}}
+    <app-new-thing [text]='message.text' (update)="updateModel(message.id, $event.text)"></app-new-thing>
   </li>
 </ul>
 

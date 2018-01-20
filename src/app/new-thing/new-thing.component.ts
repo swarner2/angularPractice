@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-new-thing",
@@ -6,13 +6,11 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./new-thing.component.css"]
 })
 export class NewThingComponent implements OnInit {
-  @Input() message;
+  @Input() text;
+
+  @Output() update = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
-
-  display(msg): void {
-    console.log(msg);
-  }
 }
