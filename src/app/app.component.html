@@ -1,1 +1,6 @@
-<app-new-thing></app-new-thing>
+
+<ul>
+  <li *ngFor="let message of messages">
+    <app-new-thing [message]='message'></app-new-thing>
+  </li>
+</ul>
