@@ -1,3 +1,3 @@
-{{message.text}}
-<input type="text" name="" value="" [(ngModel)]='message.text'>
-<button type="button" name="button" (click)="display(message.text)">Click Me!</button>
+{{this.message}}
+<input #myInput type="text" name="" value="" [(ngModel)]='message.text'>
+<button type="button" name="button" (click)="display(myInput)">Click Me!</button>
