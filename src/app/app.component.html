@@ -1,3 +1,4 @@
+routing
 <div *ngFor="let message of messages">
   <app-new-thing [text]="message.text" (update)=onUpdate(message.id,$event)></app-new-thing>
 </div>
